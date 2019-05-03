@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <script src="https://get.mavo.io/mavo.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+  </head>
+  <body>
+    <section mv-app="cookediary" mv-strage="https://github.com/northfox/cookediary/blob/data/data/app.data">
+      <h1>Cookediary</h1>
+      <div class="editable">
+        <article property="menu" mv-multiple>
+          <time name="cookedDate" property="cookedDate" datetime="2019-05-01"></time>
+          <p>Satisfaction level: [satisfaction/10]/10</p>
+          <input name="satisfaction" type="range" value="" property="satisfaction"/>
+          <article name="dish" property="dish" mv-multiple>
+            <h2 name="naem" property="name">What was menu name?</h2>
+            <ul>
+              <li property="foodstuff" mv-multiple>What did you use foodstuff?</li>
+            </ul>
+          </article>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
